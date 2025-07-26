@@ -1,0 +1,37 @@
+{
+  "rain": {
+    "name": "Rain Sounds",
+    "url": "/sounds/meditation/rainOnUmbrella.mp3",
+    "description": "Gentle rainfall on umbrella"
+  },
+  "stream": {
+    "name": "Small River Stream",
+    "url": "/sounds/meditation/smallRiverStream.mp3",
+    "description": "Slow-flowing stream"
+  },
+  "nightforest": {
+    "name": "Night Forest Ambience",
+    "url": "/sounds/meditation/nightForest.mp3",
+    "description": "Animals & nature"
+  },
+  "tibetan": {
+    "name": "Tibetan Bowls",
+    "url": "/sounds/meditation/tibetan.mp3",
+    "description": "Singing bowls"
+  },
+    "binaural": {
+    "name": "Binaural Beats",
+    "url": "/sounds/meditation/binaural_beats.mp3",
+    "description": "Theta Waves 4 Hz"
+  },
+  "brownnoise": {
+    "name": "Brown/Red Noise",
+    "url": "/sounds/meditation/brownnoise.mp3",
+    "description": "Deep brown noise"
+  },
+  "silence": {
+    "name": "❌ Silence",
+    "url": null,
+    "description": "Pure silence, no sound"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "beginner": {
+    "name": "Box Breathing",
+    "description": "4-4-4-4 second pattern for relaxation",
+    "pattern": {
+      "inhale": 4000,
+      "holdIn": 4000,
+      "exhale": 4000,
+      "holdOut": 4000
+    },
+    "phases": ["inhale", "hold", "exhale", "hold"],
+    "benefits": "Reduces stress, improves focus, perfect for beginners"
+  },
+  "intermediate": {
+    "name": "4-7-8 Breathing",
+    "description": "Inhale 4, hold 7, exhale 8 seconds",
+    "pattern": {
+      "inhale": 4000,
+      "holdIn": 7000,
+      "exhale": 8000,
+      "holdOut": 0
+    },
+    "phases": ["inhale", "hold", "exhale"],
+    "benefits": "Promotes sleep, reduces anxiety, calms nervous system"
+  },
+  "advanced": {
+    "name": "Coherent Breathing",
+    "description": "5-second inhale and exhale rhythm",
+    "pattern": {
+      "inhale": 5000,
+      "holdIn": 0,
+      "exhale": 5000,
+      "holdOut": 0
+    },
+    "phases": ["inhale", "exhale"],
+    "benefits": "Heart rate variability, emotional balance, deep calm"
+  },
+  "expert": {
+    "name": "Stimulating Breathwork",
+    "description": "30 power breaths + retention",
+    "pattern": {
+      "inhale": 1500,
+      "holdIn": 0,
+      "exhale": 1500,
+      "holdOut": 60000
+    },
+    "phases": ["power_breathing", "retention"],
+    "benefits": "Increases energy, cold tolerance, mental resilience",
+    "special": true,
+    "rounds": 30
+  }
+}

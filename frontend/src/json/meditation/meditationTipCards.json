@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Perfect Posture",
+    "text": "Sit comfortably with your spine straight, shoulders relaxed, and hands resting gently on your knees.",
+    "gradient": "from-blue-50 to-indigo-50",
+    "border": "border-indigo-200"
+  },
+  {
+    "title": "Gentle Focus",
+    "text": "Keep your eyes softly closed and focus on the breathing animation and your natural breath rhythm.",
+    "gradient": "from-purple-50 to-pink-50",
+    "border": "border-pink-200"
+  },
+  {
+    "title": "Be Patient",
+    "text": "Remember that meditation is a practice. Be kind to yourself and don’t worry about perfection.",
+    "gradient": "from-green-50 to-teal-50",
+    "border": "border-teal-200"
+  }
+]

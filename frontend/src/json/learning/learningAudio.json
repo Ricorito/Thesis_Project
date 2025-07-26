@@ -1,0 +1,57 @@
+{
+  "backgroundMusic": [
+    {
+      "id": "silent",
+      "name": "Silent Mode",
+      "icon": "VolumeX",
+      "audioPath": null,
+      "loop": false
+    },
+    {
+      "id": "lofi",
+      "name": "Lo-fi",
+      "icon": "Volume2",
+      "audioPath": "/sounds/learning/lofi.mp3",
+      "loop": true
+    },
+    {
+      "id": "fairypiano",
+      "name": "Fairy Piano",
+      "icon": "Volume2",
+      "audioPath": "/sounds/learning/fairypiano.mp3",
+      "loop": true
+    },
+    {
+      "id": "lofipiano",
+      "name": "Magical Moment",
+      "icon": "Volume2",
+      "audioPath": "/sounds/learning/magicalmoment.mp3",
+      "loop": true
+    },
+    {
+      "id": "oceanwaves",
+      "name": "Ocean Waves",
+      "icon": "Volume2",
+      "audioPath": "/sounds/learning/OceanWaves.mp3",
+      "loop": true
+    },
+    {
+      "id": "darkambient",
+      "name": "Dark Ambient",
+      "icon": "Volume2",
+      "audioPath": "/sounds/learning/darkambient.mp3",
+      "loop": true
+    }
+  ],
+  "timerSounds": {
+    "countdown": {
+      "audioPath": "/sounds/learning/countdown.mp3",
+      "description": "5-second countdown sound"
+    }
+  },
+  "volume": {
+    "default": 0.7,
+    "background": 0.5,
+    "timer": 1.0
+  }
+}

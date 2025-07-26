@@ -1,0 +1,34 @@
+[
+  {
+    "text": "What is this website about?",
+    "response": "This is a modern mental health web application that supports users in stress reduction, self-reflection, learning techniques, and personal growth. It's designed especially for young users, but accessible to anyone."
+  },
+  {
+    "text": "What are the main features?",
+    "response": "The app includes daily notes, motivational quotes, Pomodoro timers, customizable background audio, journaling tools, guided meditations, and an interactive community forum."
+  },
+  {
+    "text": "Tell me more about the meditation tools",
+    "response": "The meditation section offers built-in calming sounds, a breathing animation, and a customizable timer to help users ground themselves and find inner calm."
+  },
+  {
+    "text": "How does the Pomodoro timer work?",
+    "response": "You can choose between 25/5 or 50/10 minute intervals, with optional ambient sounds such as brown noise or classical music. This helps create a focused, distraction-free study session."
+  },
+  {
+    "text": "Can I write journal entries?",
+    "response": "Yes! You can maintain daily journal entries to track your emotional progress or reflect on your day."
+  },
+  {
+    "text": "Is there a community space?",
+    "response": "Absolutely. The forum allows you to post experiences anonymously or with a nickname. Posts can be upvoted and commented on, and moderators help maintain respectful discussion."
+  },
+  {
+    "text": "How do I register or login?",
+    "response": "linktext:/authpage::Press here to be part of the community"
+  },
+  {
+    "text": "Who made this?",
+    "response": "This project was created by Martin Germán as part of his thesis at the University of Szeged in 2025. It was originally meant for young students (ages 12–25) to support their mental health—but it's grown into a safe and calm space for anyone navigating big transitions: students, early-career adults, or anyone needing focus, support, reflection, and kindness."
+  }
+]

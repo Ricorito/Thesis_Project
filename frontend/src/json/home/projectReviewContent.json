@@ -1,0 +1,52 @@
+{
+  "header": {
+    "title": "Calm Space for ",
+    "description": "Tools for journaling, meditation, focus, and community—designed to help you feel better, think clearer, and grow gently."
+  },
+  "features": [
+    {
+      "icon": "Timer",
+      "title": "Pomodoro & Retrieval ",
+      "desc": "Stay productive with 25/5 or 50/10 intervals or switch to Retrieval mode—create your own flashcards, quiz yourself, and reinforce what you've learned with answer checking."
+    },
+    {
+      "icon": "Brain",
+      "title": "Meditation & Motivational Quote",
+      "desc": "Breathe deeply with calming sounds, a breathing animation, and a customizable timer and get inspired with daily quotes that support your mindset and motivation."
+    },
+    {
+      "icon": "NotebookPen",
+      "title": "Daily Journaling",
+      "desc": "Reflect on your day and track your emotional journey through personal entries. Completely anonymous — even I, the creator, have no access to what you write. This space is yours alone."    },
+    {
+      "icon": "Users",
+      "title": "Community Forum",
+      "desc": "Share thoughts on our community forum. Upvote, comment, and connect respectfully."
+    },
+    {
+      "icon": "Music",
+      "title": "Custom Audio",
+      "desc": "Set the mood with ambient background sounds to enhance focus or relaxation."
+    },
+    {
+      "icon": "BookOpen",
+      "title": "Articles",
+      "desc": "Browse articles grounded in both past and recent research—covering topics like mental health, personal growth, and emotional well-being. Learn at your own pace and explore ideas you can trust."
+    }
+  ],
+  "plans": [
+    {
+      "name": "FREE PLAN",
+      "features": ["Journaling", "Meditation","Learning Techniques", "Daily Quotes", "Community Forum", "Articles", "Custom Notes", "Henia 😊 the virtual assistant"]
+    },
+    {
+      "name": "FREE PLAN",
+      "features": ["Journaling", "Meditation","Learning Techniques", "Daily Quotes", "Community Forum", "Articles", "Custom Notes", "Henia 😊 the virtual assistant"]
+    },
+    {
+      "name": "FREE PLAN",
+      "features": ["Journaling", "Meditation","Learning Techniques", "Daily Quotes", "Community Forum", "Articles", "Custom Notes", "Henia 😊 the virtual assistant"]
+    }
+  ],
+  "creatorNote": "This project was born from my own journey during university. I built it to help others find peace, clarity, and balance—just like I needed at the time. Thank you for being here and sharing in this space."
+}

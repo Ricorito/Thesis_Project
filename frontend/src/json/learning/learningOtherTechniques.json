@@ -1,0 +1,179 @@
+[
+  {
+    "category": "Memory & Retention",
+    "techniques": [
+      {
+        "title": "Active Recall",
+        "description": "Test yourself frequently instead of just re-reading notes",
+        "tips": ["Use flashcards", "Explain concepts out loud", "Practice problems without looking at solutions"],
+        "color": "bg-blue-50 border-blue-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Spaced Repetition",
+        "description": "Review material at increasing intervals to strengthen memory",
+        "tips": ["Review after 1 day, 3 days, 1 week", "Use apps like Anki", "Focus on difficult concepts more often"],
+        "color": "bg-teal-50 border-teal-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Chunking",
+        "description": "Break large amounts of information into smaller, manageable pieces",
+        "tips": ["Group related concepts together", "Use acronyms or patterns", "Create logical sequences"],
+        "color": "bg-cyan-50 border-cyan-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Dual Coding",
+        "description": "Combine visual and verbal information to enhance memory",
+        "tips": ["Draw diagrams while reading", "Create mind maps with images", "Use both words and pictures in notes"],
+        "color": "bg-indigo-50 border-indigo-200",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  {
+    "category": "Understanding & Comprehension",
+    "techniques": [
+      {
+        "title": "Concrete Examples",
+        "description": "Use specific, real-world examples to understand abstract concepts",
+        "tips": ["Find everyday applications", "Create personal connections", "Use case studies"],
+        "color": "bg-green-50 border-green-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Feynman Technique",
+        "description": "Explain complex concepts in simple terms to identify knowledge gaps",
+        "tips": ["Teach it to someone else", "Use analogies", "Simplify technical language"],
+        "color": "bg-purple-50 border-purple-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Elaborative Interrogation",
+        "description": "Ask yourself 'why' and 'how' questions about the material",
+        "tips": ["Question assumptions", "Connect to prior knowledge", "Seek deeper understanding"],
+        "color": "bg-rose-50 border-rose-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Self-Explanation",
+        "description": "Explain the reasoning behind each step while learning",
+        "tips": ["Think aloud while solving problems", "Justify each decision", "Connect steps to principles"],
+        "color": "bg-fuchsia-50 border-fuchsia-200",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  {
+    "category": "Organization & Structure",
+    "techniques": [
+      {
+        "title": "Mind Mapping",
+        "description": "Create visual representations of information to see connections",
+        "tips": ["Start with main topic in center", "Use colors and images", "Connect related concepts"],
+        "color": "bg-blue-50 border-blue-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Cornell Note-Taking",
+        "description": "Divide notes into sections for better organization and review",
+        "tips": ["Use cue column for questions", "Summarize at the bottom", "Review regularly"],
+        "color": "bg-teal-50 border-teal-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "SQ3R Method",
+        "description": "Survey, Question, Read, Recite, Review for effective reading",
+        "tips": ["Preview before reading", "Form questions first", "Summarize after each section"],
+        "color": "bg-pink-50 border-pink-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Concept Mapping",
+        "description": "Show relationships between different concepts visually",
+        "tips": ["Link concepts with labeled arrows", "Show hierarchies", "Use different shapes for different types"],
+        "color": "bg-violet-50 border-violet-200",
+        "difficulty": "Intermediate"
+      }
+    ]
+  },
+  {
+    "category": "Practice & Application",
+    "techniques": [
+      {
+        "title": "Retrieval Practice",
+        "description": "Practice recalling information from memory without looking",
+        "tips": ["Close your book and write what you remember", "Use practice tests", "Quiz yourself regularly"],
+        "color": "bg-cyan-50 border-cyan-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Distributed Practice",
+        "description": "Spread learning sessions over time rather than cramming",
+        "tips": ["Study a little each day", "Take breaks between sessions", "Plan study schedule in advance"],
+        "color": "bg-green-50 border-green-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Generation Effect",
+        "description": "Create your own examples and questions instead of just reading",
+        "tips": ["Make up your own problems", "Create practice questions", "Generate examples from memory"],
+        "color": "bg-amber-50 border-amber-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Interleaving",
+        "description": "Mix different types of problems or subjects in study sessions",
+        "tips": ["Don't study one topic for too long", "Switch between subjects", "Practice varied problem types"],
+        "color": "bg-orange-50 border-orange-200",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  {
+    "category": "Metacognitive Strategies",
+    "techniques": [
+      {
+        "title": "Planning & Goal Setting",
+        "description": "Set specific learning goals and create study plans",
+        "tips": ["Set SMART goals", "Break large goals into smaller ones", "Track progress regularly"],
+        "color": "bg-lime-50 border-lime-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Reflection & Review",
+        "description": "Regularly reflect on what you've learned and how you learned it",
+        "tips": ["Keep a learning journal", "Review mistakes and successes", "Adjust strategies based on results"],
+        "color": "bg-yellow-50 border-yellow-200",
+        "difficulty": "Intermediate"
+      },
+      {
+        "title": "Self-Monitoring",
+        "description": "Track your understanding and adjust study strategies accordingly",
+        "tips": ["Rate your confidence after each topic", "Identify weak areas", "Adjust time allocation"],
+        "color": "bg-red-50 border-red-200",
+        "difficulty": "Advanced"
+      }
+    ]
+  },
+  {
+    "category": "Social & Collaborative",
+    "techniques": [
+      {
+        "title": "Collaborative Learning",
+        "description": "Work together with others to solve problems and discuss concepts",
+        "tips": ["Join study groups", "Discuss different perspectives", "Share resources and strategies"],
+        "color": "bg-blue-50 border-blue-200",
+        "difficulty": "Beginner"
+      },
+      {
+        "title": "Peer Teaching",
+        "description": "Teach concepts to classmates or study partners",
+        "tips": ["Form study groups", "Take turns explaining topics", "Ask each other questions"],
+        "color": "bg-violet-50 border-violet-200",
+        "difficulty": "Intermediate"
+      }
+    ]
+  }
+]

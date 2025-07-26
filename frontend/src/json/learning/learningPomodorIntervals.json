@@ -1,0 +1,12 @@
+[
+  {
+    "work": 25,
+    "break": 5,
+    "label": "Classic (25/5)"
+  },
+  {
+    "work": 50,
+    "break": 10,
+    "label": "Extended (50/10)"
+  }
+]
