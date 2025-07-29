@@ -1,10 +1,9 @@
 {
-  "mainTitle": "Understanding the Critical Importance of Mental Health",
-  "introduction": "Mental health is a fundamental aspect of overall well-being, influencing how individuals think, feel, and behave. It encompasses emotional, psychological, and social well-being, affecting daily functioning, relationships, and productivity. Prioritizing mental health is as crucial as maintaining physical health for a balanced and fulfilling life.",
+  "introduction": "Mental health is an essential pillar of our overall well-being, shaping the way we think, feel, and navigate everyday life. It touches every aspect of our emotional, psychological, and social existence—impacting how we manage stress, maintain relationships, and perform at home, work or school. Just as we care for our physical health, nurturing our mental health is vital to living a balanced, fulfilling, and resilient life.",
   "featuredCategories": [
     {
       "title": "Why Mental Health Matters for All Ages",
-      "description": "Good mental health enables individuals to cope with life's stresses, realize their full potential, work productively, and make meaningful contributions to their communities. Conversely, untreated mental health conditions can lead to significant impairments in various life domains, including education, employment, and social interactions. The World Health Organization (WHO) defines mental health as 'a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community.' This holistic view underscores its pervasive impact on human flourishing.",
+      "description": "Mental health is a cornerstone of overall well-being, influencing how we handle stress, connect with others, and pursue our goals. When nurtured, it empowers individuals to thrive—mentally, emotionally, and socially. It enables us to manage life’s challenges, unlock our potential, work effectively, and contribute meaningfully to our communities. However, when mental health is neglected or untreated, it can lead to serious disruptions in key areas of life, including education, employment, and relationships. These challenges can affect people of all ages, from children and adolescents to adults and seniors. The World Health Organization defines mental health as “a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community.” This holistic perspective highlights mental health not just as the absence of illness, but as a vital component of human flourishing. Mental health conditions—ranging from anxiety and depression to more severe disorders—are common and treatable. According to the American Psychiatric Association, mental illnesses involve changes in emotion, thinking, or behavior, and can impact daily functioning. Early intervention, supportive environments, and access to care are key to recovery and resilience.",
       "references": [
         {
           "text": "World Health Organization (WHO) - Mental Health: A State of Well-being",
@@ -18,18 +17,18 @@
     },
     {
       "title": "The Unique Vulnerability of Younger Generations",
-      "description": "Adolescence and young adulthood are critical periods for mental health development. During these formative years, individuals experience significant biological, psychological, and social changes, making them particularly susceptible to the onset of mental health conditions. Research indicates that a significant percentage of all lifetime mental illnesses begin in youth. Factors contributing to mental health challenges in youth include academic pressure, social media influence, bullying, family dynamics, societal expectations, and global crises. Early intervention and support are paramount, as untreated conditions in youth can lead to long-term consequences, including academic failure, substance abuse, and increased risk of suicide. Investing in youth mental health services, promoting mental health literacy, and fostering supportive environments are essential strategies to build resilience and ensure the well-being of future generations. Educational institutions, families, and communities all play a vital role in creating a culture that destigmatizes mental health issues and encourages help-seeking behavior.",
-      "references": [
-        {
-          "text": "National Institute of Mental Health (NIMH) - Mental Health Information for Teens and Young Adults",
-          "url": "https://www.nimh.nih.gov/health/topics/children-and-adolescents"
-        },
-        {
-          "text": "CDC - Children's Mental Health",
-          "url": "https://www.cdc.gov/childrensmentalhealth/index.html"
-        }
-      ]
+      "description": "Adolescence and young adulthood are critical periods for mental health development. During these formative years, individuals experience significant biological, psychological, and social changes, making them particularly susceptible to the onset of mental health conditions. Research indicates that a significant percentage of all lifetime mental illnesses begin in youth. Factors contributing to mental health challenges in youth include academic pressure, social media influence, bullying, family dynamics, societal expectations, and global crises. Early intervention and support are paramount, as untreated conditions in youth can lead to long-term consequences, including academic failure, substance abuse, and increased risk of suicide. Investing in youth mental health services, promoting mental health literacy, and fostering supportive environments are essential strategies to build resilience and ensure the well-being of future generations. Educational institutions, families, and communities all play a vital role in creating a culture that destigmatizes mental health issues and encourages help-seeking behavior. To effectively promote positive mental health outcomes, it is crucial to integrate emotional well-being into everyday youth experiences—from classrooms and peer relationships to online interactions and extracurricular activities.",
+     "references": [
+    {
+      "text": "World Health Organization – Adolescent Mental Health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health"
+    },
+    {
+      "text": "CDC – Children's Mental Health",
+      "url": "https://www.cdc.gov/children-mental-health/data-research/index.html"
     }
+  ]
+}
   ],
   "categories": [
     {

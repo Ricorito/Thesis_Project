@@ -1,5 +1,5 @@
 import { db } from "../db.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 
 // GET user profile
 export const getUserProfile = (req, res) => {

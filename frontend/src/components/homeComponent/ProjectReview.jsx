@@ -21,13 +21,14 @@ const ProjectReview = () => {
           >
             {content.header.title} <TextLoopHeader />
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 mt-4 max-w-3xl mx-auto">
+          <p className="text-lg font-inter text-transform: uppercase text-bold md:text-xl text-gray-700 mt-4 max-w-3xl mx-auto">
             {content.header.description}
           </p>
         </header>
-        <CreatorNote />
         <FeatureGrid />
         <PlanSection />
+        <CreatorNote />
+
       </section>
     </AOSWrapper>
   );

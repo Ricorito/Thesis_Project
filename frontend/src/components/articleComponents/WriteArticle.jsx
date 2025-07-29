@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import articleCategories from "../../json/article/articleCategories.json"
+import articleCategories from "../../json/article/articleCategories.json";
 
 import { useArticle } from "../../hooks/articleHooks/useArticle";
 
@@ -24,7 +24,7 @@ const WriteArticle = () => {
   } = useArticle();
 
   return (
-    <div className="add mt-10 px-4 sm:px-6 lg:px-16 flex flex-col lg:flex-row gap-8 pb-12">
+    <div className="add min-h-screen mt-10 px-4 sm:px-6 lg:px-16 flex flex-col lg:flex-row gap-8 pb-12">
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -56,25 +56,25 @@ const WriteArticle = () => {
           <CardHeader>
             <CardTitle>Category</CardTitle>
           </CardHeader>
-<CardContent>
-  <div className="flex flex-wrap gap-2">
-    {articleCategories.map(({ label, value }) => (
-      <div className="flex items-center gap-2 w-[calc(50%-0.5rem)]" key={value}>
-        <input
-          type="radio"
-          checked={cat === value}
-          name="cat"
-          value={value}
-          id={value}
-          onChange={(e) => setCat(e.target.value)}
-        />
-        <label htmlFor={value}>
-          {label}
-        </label>
-      </div>
-    ))}
-  </div>
-</CardContent>
+          <CardContent>
+            <div className="flex flex-wrap gap-2">
+              {articleCategories.map(({ label, value }) => (
+                <div
+                  className="flex items-center gap-2 w-[calc(50%-0.5rem)]"
+                  key={value}>
+                  <input
+                    type="radio"
+                    checked={cat === value}
+                    name="cat"
+                    value={value}
+                    id={value}
+                    onChange={(e) => setCat(e.target.value)}
+                  />
+                  <label htmlFor={value}> {label} </label>
+                </div>
+              ))}
+            </div>
+          </CardContent>
         </Card>
 
         <Card className="h-full">

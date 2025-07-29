@@ -96,9 +96,7 @@ const CommunityPostCard = ({ post, onUpvote, onCategoryClick, onDelete }) => {
   const handlePostOpen = (postId) => {
     navigate(`/community/${postId}`);
   };
-  const handleEdit = () => {
-    navigate(`/community/edit/${post.id}`);
-  };
+ 
   return (
     <Card className="p-4 bg-white border border-gray-300 rounded-lg hover:shadow-md transition duration-200">
       <div className="flex flex-col sm:flex-row gap-4">
@@ -175,16 +173,15 @@ const CommunityPostCard = ({ post, onUpvote, onCategoryClick, onDelete }) => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                {post.user_id === currentUser?.id && (
-                  <>
-                    <DropdownMenuItem onClick={handleEdit}>
-                      Edit
-                    </DropdownMenuItem>
-                    <DropdownMenuItem onClick={handleDelete}>
-                      Delete
-                    </DropdownMenuItem>
-                  </>
-                )}
+{post.user_id === currentUser?.id && (
+  <>
+    <DropdownMenuItem onClick={handleDelete}>Delete</DropdownMenuItem>
+    <DropdownMenuItem onClick={() => navigate(`/community/${post.id}`, { state: { edit: true } })}>
+      Edit
+    </DropdownMenuItem>
+  </>
+)}
+
                 <DropdownMenuItem onClick={handleReport}>
                   Report
                 </DropdownMenuItem>

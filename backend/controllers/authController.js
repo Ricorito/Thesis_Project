@@ -1,6 +1,6 @@
 
 import { db } from "../db.js";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import { body, validationResult } from "express-validator";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
@@ -25,7 +25,7 @@ const transporter = nodemailer.createTransport({
 
 const sendVerificationEmail = async (email, userId) => {
   const token = jwt.sign({ id: userId }, process.env.JWT_SECRET, {
-    expiresIn: "1h",
+    expiresIn: "7d",
   });
   const verifyUrl = `${process.env.FRONTEND_ORIGIN}/verify?token=${token}`;
 

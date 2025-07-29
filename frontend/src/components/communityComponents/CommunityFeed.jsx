@@ -89,12 +89,12 @@ const CommunityFeed = () => {
         <main className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-4" data-aos="fade-down">
             <h1 className="text-4xl font-bold font-jakarta text-gray-800 mb-2">
-              MindfulSpace Community
+              Community Space
             </h1>
             <p className="text-lg italic text-gray-600 max-w-2xl mx-auto">
-              Share your journey, support others, and grow together. Learn from
-              others and offer your wisdom through storytelling and thoughtful
-              reflection.
+                Welcome to a space where stories spark connection and support flourishes. 
+                Share your personal journey, lift others with your insight, and grow through meaningful dialogue. 
+                This is your hub for thoughtful reflection, collective wisdom, and a sense of belonging.
             </p>
           </div>
 

@@ -20,6 +20,9 @@ import VerifyRedirect from "./components/authComponents/VerifyRedirect";
 
 import CommunityPostDetail from "./components/communityComponents/CommunityPostDetail";
 
+import LogoPage from "../src/pages/LogoPage"
+
+
 import Layout from "./components/utilityComponents/Layer";
 import "./css/index.css";
 
@@ -42,6 +45,8 @@ function App() {
       <Routes>
         {/* Public routes without layout */}
         <Route path="/" element={<HomePage />} />
+        <Route path="logo" element={<LogoPage />} />
+
         <Route path="/authpage" element={<Authpage />} />
         <Route path="/verify" element={<VerifyRedirect />} />
 

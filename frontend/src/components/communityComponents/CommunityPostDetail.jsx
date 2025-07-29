@@ -14,6 +14,8 @@ import { AuthContext } from "../../contexts/authContext";
 import { useToast } from "@/hooks/use-toast";
 import DOMPurify from "dompurify";
 import { formatDistanceToNow } from "date-fns";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import CommunityCommentSection from "./CommunityCommentSection";
 
 const CommunityPostDetail = () => {
@@ -28,9 +30,12 @@ const CommunityPostDetail = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const [showEditDialog, setShowEditDialog] = useState(false);
-  const [editTitle, setEditTitle] = useState("");
   const [editContent, setEditContent] = useState("");
-  const [editCategory, setEditCategory] = useState("");
+  useEffect(() => {
+    if (showEditDialog && post) {
+      setEditContent(post.content || "");
+    }
+  }, [showEditDialog, post]);
 
   useEffect(() => {
     if (!id) return;
@@ -50,7 +55,7 @@ const CommunityPostDetail = () => {
     })();
   }, [id, toast]);
 
-const handleUpvote = async () => {
+  const handleUpvote = async () => {
     if (isLoading) return;
     setIsLoading(true);
     try {
@@ -78,23 +83,26 @@ const handleUpvote = async () => {
 
   const handleUpdate = async () => {
     try {
+      const sanitized = DOMPurify.sanitize(editContent);
+
       await useCommunity.updatePost(post.id, {
-        title: editTitle,
-        content: editContent,
-        category: editCategory,
+        content: sanitized,
       });
+
       setPost({
         ...post,
-        title: editTitle,
-        content: editContent,
-        category: editCategory,
+        content: sanitized,
       });
-      toast({ title: "Sikeres mentés", description: "A poszt frissítve lett." });
+
+      toast({
+        title: "Update Success",
+        description: "The post has been updated!",
+      });
       setShowEditDialog(false);
     } catch {
       toast({
-        title: "Hiba",
-        description: "Nem sikerült frissíteni.",
+        title: "Error",
+        description: "Failed to update.",
         variant: "error",
       });
     }
@@ -127,99 +135,128 @@ const handleUpvote = async () => {
     }
   };
 
-return (
-  <div className="w-full min-h-screen max-w-screen-lg px-4 mx-auto py-6 space-y-6">
-    {!post ? (
-      <div className="p-6 text-center text-gray-600">Loading...</div>
-    ) : (
-      <>
-        <div className="bg-white border border-gray-300 rounded-lg hover:shadow-md transition duration-200 p-4 relative">
-          {/* Dropdown in the top-right corner */}
-          <div className="absolute top-4 right-4 z-10">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+  return (
+    <div className="w-full min-h-screen max-w-screen-lg px-4 mx-auto py-6 space-y-6">
+      {!post ? (
+        <div className="p-6 text-center text-gray-600">Loading...</div>
+      ) : (
+        <>
+          <div className="bg-white border border-gray-300 rounded-lg hover:shadow-md transition duration-200 p-4 relative">
+            {/* Dropdown in the top-right corner */}
+            <div className="absolute top-4 right-4 z-10">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-gray-500 hover:text-teal-700">
+                    <MoreHorizontal className="w-4 h-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  {post.user_id === currentUser?.id && (
+                    <>
+                      <DropdownMenuItem onClick={handleDelete}>
+                        Delete
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => setShowEditDialog(true)}>
+                        Edit
+                      </DropdownMenuItem>
+                    </>
+                  )}
+                  <DropdownMenuItem onClick={handleReport}>
+                    Report
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+
+            {/* Post content */}
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              {/* Upvote section */}
+              <div className="flex sm:flex-col items-center gap-1 sm:gap-2 sm:w-12">
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-gray-500 hover:text-teal-700"
-                >
-                  <MoreHorizontal className="w-4 h-4" />
+                  onClick={handleUpvote}
+                  disabled={isLoading}
+                  className={`rounded-full ${
+                    isUpvoted
+                      ? "bg-teal-500 text-white"
+                      : "text-gray-500 hover:bg-teal-500"
+                  }`}>
+                  {isUpvoted ? (
+                    <ArrowDown className="w-4 h-4" />
+                  ) : (
+                    <ArrowUp className="w-4 h-4" />
+                  )}
                 </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                {post.user_id === currentUser?.id && (
-                  <DropdownMenuItem onClick={handleDelete}>Delete</DropdownMenuItem>
-                )}
-                <DropdownMenuItem onClick={handleReport}>Report</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-
-          {/* Post content */}
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            {/* Upvote section */}
-            <div className="flex sm:flex-col items-center gap-1 sm:gap-2 sm:w-12">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={handleUpvote}
-                disabled={isLoading}
-                className={`rounded-full ${
-                  isUpvoted
-                    ? "bg-teal-500 text-white"
-                    : "text-gray-500 hover:bg-teal-500"
-                }`}
-              >
-                {isUpvoted ? (
-                  <ArrowDown className="w-4 h-4" />
-                ) : (
-                  <ArrowUp className="w-4 h-4" />
-                )}
-              </Button>
-              <span
-                className={`text-sm font-medium cursor-default ${
-                  isUpvoted ? "text-teal-500 text-xl" : "text-gray-500"
-                }`}
-              >
-                {upvotes}
-              </span>
-            </div>
-
-            {/* Post body */}
-            <div className="flex-1 space-y-2">
-              <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
-                <Badge className="bg-violet-50 text-black hover:bg-darkblue cursor-pointer">
-                  {post.category}
-                </Badge>
-                <span>
-                  ◉{" "}
-                  {formatDistanceToNow(new Date(post.created_at), {
-                    addSuffix: true,
-                  })}
+                <span
+                  className={`text-sm font-medium cursor-default ${
+                    isUpvoted ? "text-teal-500 text-xl" : "text-gray-500"
+                  }`}>
+                  {upvotes}
                 </span>
               </div>
-              <span className="text-teal-600 text-xs hover:underline">
-                @{post.username}
-              </span>
-              <h1 className="text-lg pt-2 font-semibold border-b-2 capitalize border-gray-200 text-gray-800">
-                {post.title}
-              </h1>
-              <div
-                className="text-sm text-gray-700"
-                dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(post.content || ""),
-                }}
-              />
+
+              {/* Post body */}
+              <div className="flex-1 space-y-2">
+                <div className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+                  <Badge className="bg-violet-50 text-black hover:bg-darkblue cursor-pointer">
+                    {post.category}
+                  </Badge>
+                  <span>
+                    ◉{" "}
+                    {formatDistanceToNow(new Date(post.created_at), {
+                      addSuffix: true,
+                    })}
+                  </span>
+                </div>
+                <span className="text-teal-600 text-xs hover:underline">
+                  @{post.username}
+                </span>
+                <h1 className="text-lg pt-2 font-semibold border-b-2 capitalize border-gray-200 text-gray-800">
+                  {post.title}
+                </h1>
+                <div
+                  className="text-sm text-gray-700"
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(post.content || ""),
+                  }}
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Comments */}
-        <CommunityCommentSection postId={post.id} />
-      </>
-    )}
-  </div>
-);
-}
+          {/* Comments */}
+          <CommunityCommentSection postId={post.id} />
+          {showEditDialog && (
+            <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
+              <div className="bg-white p-6 rounded-lg w-full max-w-lg shadow-lg space-y-4">
+                <h2 className="text-xl font-semibold">Edit Post</h2>
 
-export default CommunityPostDetail
+                <ReactQuill
+                  value={editContent}
+                  onChange={setEditContent}
+                  theme="snow"
+                  className="bg-white rounded"
+                />
+
+                <div className="flex justify-end gap-2">
+                  <Button
+                    variant="outline"
+                    onClick={() => setShowEditDialog(false)}>
+                    Cancel
+                  </Button>
+                  <Button onClick={handleUpdate}>Save</Button>
+                </div>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+};
+
+export default CommunityPostDetail;
