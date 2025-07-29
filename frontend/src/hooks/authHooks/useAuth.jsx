@@ -3,8 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useSearchParams } from "react-router-dom"
 
 import axios from "axios";
-
 import { AuthContext } from "../../contexts/authContext";
+
+const isDev = import.meta.env.VITE_ENV === "development";
+const API_BASE_URL = isDev
+  ? import.meta.env.VITE_API_LOCAL
+  : import.meta.env.VITE_API_PROD;
 
 function useAuth() {
   const [isRegisterPage, setIsRegisterPage] = useState(false);
@@ -30,7 +34,7 @@ function useAuth() {
 
   const verifyEmail = async () => {
     try {
-      await axios.get(`http://localhost:8800/api/auth/verify?token=${token}`);
+        await axios.get(`${API_BASE_URL}/api/auth/verify?token=${token}`);
       setSuccessMessage("Email verification successful!");
     } catch (err) {
       console.error("Verification failed:", err);
@@ -68,8 +72,8 @@ function useAuth() {
 
   const handleGoogleLogin = async (code) => {
     try {
-      const res = await axios.post(
-        "http://localhost:8800/api/auth/google",
+       const res = await axios.post(
+        `${API_BASE_URL}/api/auth/google`,
         { code },
         { withCredentials: true }
       );
@@ -99,9 +103,9 @@ function useAuth() {
     setErrors({});
     setSuccessMessage("");
 
-    const endpoint = isRegisterPage
-      ? "http://localhost:8800/api/auth/register"
-      : "http://localhost:8800/api/auth/login";
+  const endpoint = isRegisterPage
+      ? `${API_BASE_URL}/api/auth/register`
+      : `${API_BASE_URL}/api/auth/login`;
 
   const dataToSend = isRegisterPage
   ? { name, email, username, password, birthday }

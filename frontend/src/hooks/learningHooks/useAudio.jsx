@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect, useRef } from "react";
 import audioConfig from "../../json/learning/learningAudio.json";
 

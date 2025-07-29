@@ -42,6 +42,7 @@ function App() {
       <Routes>
         {/* Public routes without layout */}
         <Route path="/" element={<HomePage />} />
+
         <Route path="/authpage" element={<Authpage />} />
         <Route path="/verify" element={<VerifyRedirect />} />
 

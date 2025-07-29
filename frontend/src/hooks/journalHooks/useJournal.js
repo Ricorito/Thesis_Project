@@ -2,9 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { useToast } from "@/hooks/use-toast";
 
-const API_BASE_URL = import.meta.env.DEV
-  ? import.meta.env.VITE_API_LOCAL + "/api/journals"
-  : import.meta.env.VITE_API_PROD + "/api/journals";
+const isDev = import.meta.env.VITE_ENV === "development";
+const API_BASE_URL = isDev
+  ? import.meta.env.VITE_API_LOCAL
+  : import.meta.env.VITE_API_PROD;
 
 export const useJournal = () => {
   const [journals, setJournals] = useState([]);

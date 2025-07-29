@@ -1,7 +1,7 @@
 import {
   getBreathingInstruction,
   getPhaseColor,
-} from "../meditationUtils/breathingUtils";
+} from "../../lib/breathingUtils";
 
 const BreathingCircle = ({
   currentTechnique,
