@@ -100,6 +100,12 @@ What began as a student-focused wellness tool has evolved into a broader platfor
 
 ---
 
+## Install - Project made as a monorepo (backend/frontend uses the same package.json)
+git clone
+npm i or npm install
+npm run dev
+---
+
 ## License & Credits
 This project was developed in 2025 as part of a thesis at the **University of Szeged**. It is intended for educational and personal development use.
 
