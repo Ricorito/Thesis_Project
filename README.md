@@ -1,5 +1,9 @@
 # MindSpace – Mental Health Web Application
 
+## Demo Version 1.0 - No backend & database. The Youtube link contains a presentation about the whole project.
+https://thesisprojectdemo.onrender.com/ 
+https://www.youtube.com/watch?v=2HhrEH49_Cc
+
 ## Created With
 - React JSX (minimal TSX) + Tailwind CSS  
 - Node.js + Express  
@@ -114,4 +118,3 @@ This project was developed in 2025 as part of a thesis at the **University of Sz
 All assets used in this application are either original creations or sourced from open platforms with proper attribution. Commercial use is not permitted without explicit permission from the author.
 
 ---
-
