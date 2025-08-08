@@ -1,6 +1,6 @@
 # MindSpace – Mental Health Web Application
 
-## Demo Version 1.0 - No backend & database. <br> 
+## Link to Demo Version 1.0 - No backend & database. <br> 
 The Youtube link contains a presentation about the whole project.
 - https://thesisprojectdemo.onrender.com/ 
 - https://www.youtube.com/watch?v=2HhrEH49_Cc
