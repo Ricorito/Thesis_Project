@@ -1,9 +1,6 @@
 # MindSpace – Mental Health Web Application
 
-## Link to Demo Version 1.0 - No backend & database. <br> 
-The Youtube link contains a presentation about the whole project.
-- https://thesisprojectdemo.onrender.com/ 
-- https://www.youtube.com/watch?v=2HhrEH49_Cc
+---
 
 ## Created With
 - React JSX (minimal TSX) + Tailwind CSS  
@@ -40,6 +37,11 @@ Built with care, curiosity, and a deep commitment to mental wellness.
 - Dotenv
 
 ---
+
+## Link to Demo Version 1.0 - No backend & database. <br> 
+The Youtube link contains a presentation about the whole project.
+- https://thesisprojectdemo.onrender.com/ 
+- https://www.youtube.com/watch?v=2HhrEH49_Cc
 
 ## Project Overview
 **MindSpace** is a modern mental health platform designed to help users reduce stress, reflect meaningfully, and grow personally. Originally built for students aged 12–25, it now welcomes anyone seeking clarity, calm, and emotional resilience.
